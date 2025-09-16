@@ -1,0 +1,34 @@
+/* Navbar.css */
+
+.navbar-custom {
+  position: fixed;         /* Makes it fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;           /* Keeps it above other components */
+  border-radius: 0 0 20px 20px;
+
+  /* Gradient background */
+  background: linear-gradient(90deg, #00bcd4, #2196f3, #4f9fa7, #53ca77);
+  background-size: 300% 300%;
+  animation: gradientAnimation 7s ease infinite;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Open dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}

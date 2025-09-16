@@ -1,0 +1,14 @@
+.signup-container {
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: flex-start;  /* start from top */
+  height: 100vh;
+  padding-top: 200px;       /* push card down from top */
+  
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+}

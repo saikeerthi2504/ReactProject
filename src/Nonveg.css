@@ -1,0 +1,147 @@
+/* ================= Veg Page Styling (Nonveg look, equal height cards) ================= */
+
+/* Page container */
+.non-veg {
+  min-height: 100vh;
+  padding-top: 200px;
+  
+  align-items: center;
+;
+}
+
+/* Heading section */
+.non-veg h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #154813;
+  margin-bottom: 0.5rem;
+}
+
+.non-veg h2 {
+  font-size: 1.8rem;
+  color: #235040;
+  margin-bottom: 30px;
+}
+
+/* Cards Container */
+.non-veg .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Make all columns same height */
+}
+
+/* Column: make each col flex and full height */
+.non-veg .col-md-4 {
+  display: flex;
+  flex: 1 0 30%; /* adjust width as needed */
+  margin-bottom: 20px;
+}
+
+/* Card styling */
+.non-veg .card {
+  border-radius: 15px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* stretch card to fill column */
+}
+
+.non-veg .card.hovered {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.non-veg .card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Card body layout */
+.non-veg .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* expand to fill card */
+  padding: 15px;
+}
+
+/* Title and description */
+.non-veg .card-body h2,
+.non-veg .card-body h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.non-veg .card-body p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Price section */
+.non-veg .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1b5e20;
+  text-align: center;
+}
+
+/* Add to cart button: always at bottom */
+.non-veg .card-body .btn-primary {
+  background-color: #2b8ca6 !important;
+  border: none !important;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  margin-top: auto; /* pushes button to bottom */
+}
+
+.non-veg .card-body .btn-primary:hover {
+  background-color: #24bf55 !important;
+}
+
+/* Pagination controls */
+.non-veg .pagination-controls .btn {
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.non-veg .pagination-controls .btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.non-veg footer {
+  background-color: #123e18;
+  border-radius: 20px;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.non-veg footer a {
+  color: #0a2a16;
+  text-decoration: none;
+}
+
+.non-veg footer a:hover {
+  text-decoration: underline;
+}
+.order-card {
+  max-width: 90%;   /* make wider */
+  margin: auto;     /* center horizontally */
+}
+

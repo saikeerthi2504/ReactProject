@@ -1,0 +1,18 @@
+.custom-carousel {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  max-height: 400px;
+  object-fit: contain;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
